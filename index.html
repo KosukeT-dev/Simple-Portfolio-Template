@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #50b3a2;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+        
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .main-content {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .portfolio-item {
+            background: var(--background-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+            
+            .main-content, .portfolio-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>About Me</h2>
+            <p>Write your self-introduction here. Briefly describe your skills, experience, and goals.</p>
+        </section>
+
+        <section class="main-content">
+            <h2>Projects</h2>
+            <div class="portfolio-item">
+                <h3>Project 1</h3>
+                <p>Describe your project here. Include the technologies used, your role, and the outcomes.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2</h3>
+                <p>Describe your project here. Include the technologies used, your role, and the outcomes.</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </section>
+
+        <section class="main-content">
+            <h2>Contact</h2>
+            <p>Email: yourname@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <p>GitHub: github.com/yourusername</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
